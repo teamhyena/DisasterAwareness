@@ -19,9 +19,11 @@ Since this project is built using the Windows Form library, you need to have a W
 
 ##### GitKraken or SourceTree or Any git client
 
-Visit https://www.gitkraken.com/ and follow the instructions for installion on your particular platform
+Visit https://www.gitkraken.com/ and follow the instructions for installion on your particular platform. 
 
 ##### Visual Studio
+
+Visit https://www.visualstudio.com/ and follow the instructions for installion. 
 
 ```
 During installation make sure to select the packages indicated below along with any others you would like 
