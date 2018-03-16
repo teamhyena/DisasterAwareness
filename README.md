@@ -1,11 +1,7 @@
-TODO: 
-- Add General Description of the program
-- Add Information on how to install and run the program. 
-
 
 # DisasterAwareness
 
-One Paragraph of project description goes here
+- Add General Description of the program
 
 ## Getting Started
 
