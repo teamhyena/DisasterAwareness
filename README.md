@@ -22,7 +22,12 @@ What things you need to install the software and how to install them
 
 ##### Visual Studio
 
+```
+During installation make sure to select the packages indicated below along with any others you would like 
 
+![vs_install](https://i.imgur.com/u3hFIm3.png)
+
+```
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
