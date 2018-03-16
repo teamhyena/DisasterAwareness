@@ -3,6 +3,8 @@
 
 - Add General Description of the program
 
+# Why did we pick this implementation? 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -11,9 +13,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+
+##### Windows
+
+##### GitKraken or SourceTree or Any git client
+
+##### Visual Studio
+
 
 ### Installing
 
