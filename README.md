@@ -18,7 +18,11 @@ What things you need to install the software and how to install them
 
 ##### Windows
 
+Since this project is built using the Windows Form library, you need to have a Windows enviornment to run it
+
 ##### GitKraken or SourceTree or Any git client
+
+Visit https://www.gitkraken.com/ and follow the instructions for installion on your particular platform
 
 ##### Visual Studio
 
