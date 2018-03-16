@@ -30,10 +30,7 @@ During installation make sure to select the packages indicated below along with 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+[Download a copy of DisasterAwarness](https://github.com/teamhyena/teamhyena/archive/master.zip), or clone the [repository](https://github.com/teamhyena/teamhyena/) using the git client of your choice.
 ```
 Give the example
 ```
