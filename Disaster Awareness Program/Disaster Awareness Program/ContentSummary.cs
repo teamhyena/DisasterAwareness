@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Disaster_Awareness_Program
 {
-    public partial class Login : UserControl
+    public partial class ContentSummary : UserControl
     {
-        public Login()
+        public ContentSummary()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

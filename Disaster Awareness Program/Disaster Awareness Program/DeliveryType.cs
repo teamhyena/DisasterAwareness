@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Disaster_Awareness_Program
 {
-    public partial class Login : UserControl
+    public partial class DeliveryType : UserControl
     {
-        public Login()
+        public DeliveryType()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

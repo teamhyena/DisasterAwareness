@@ -63,6 +63,26 @@ namespace Disaster_Awareness_Program.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cellphone_icon {
+            get {
+                object obj = ResourceManager.GetObject("cellphone icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Emblem {
+            get {
+                object obj = ResourceManager.GetObject("Emblem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flashflood_icon {
             get {
                 object obj = ResourceManager.GetObject("flashflood icon", resourceCulture);
@@ -113,9 +133,39 @@ namespace Disaster_Awareness_Program.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap radio_icon {
+            get {
+                object obj = ResourceManager.GetObject("radio icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Siren_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Siren Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Stage_1 {
             get {
                 object obj = ResourceManager.GetObject("Stage 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap television_icon {
+            get {
+                object obj = ResourceManager.GetObject("television icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

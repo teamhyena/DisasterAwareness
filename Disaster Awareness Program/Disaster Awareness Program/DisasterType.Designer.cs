@@ -203,18 +203,18 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_1;
-            this.pictureBox1.Location = new System.Drawing.Point(68, 46);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 46);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(481, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(561, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // DisasterType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label8);
@@ -228,7 +228,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "DisasterType";
             this.Size = new System.Drawing.Size(640, 480);
@@ -243,7 +242,6 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
@@ -257,5 +255,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

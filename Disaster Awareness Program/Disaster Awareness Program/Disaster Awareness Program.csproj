@@ -52,6 +52,25 @@
     <Compile Include="AlertType.Designer.cs">
       <DependentUpon>AlertType.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContentSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContentSummary.Designer.cs">
+      <DependentUpon>ContentSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebugControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugControl.Designer.cs">
+      <DependentUpon>DebugControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeliveryType.Designer.cs">
+      <DependentUpon>DeliveryType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device.cs" />
     <Compile Include="DisasterType.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -64,6 +83,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IslandType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IslandType.Designer.cs">
+      <DependentUpon>IslandType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,11 +100,23 @@
     <EmbeddedResource Include="AlertType.resx">
       <DependentUpon>AlertType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ContentSummary.resx">
+      <DependentUpon>ContentSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugControl.resx">
+      <DependentUpon>DebugControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryType.resx">
+      <DependentUpon>DeliveryType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisasterType.resx">
       <DependentUpon>DisasterType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslandType.resx">
+      <DependentUpon>IslandType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -108,6 +145,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Siren Icon.png" />
+    <None Include="Resources\cellphone icon.png" />
+    <None Include="Resources\radio icon.png" />
+    <Content Include="Resources\television icon.png" />
+    <None Include="Resources\Emblem.png" />
     <None Include="Resources\Tsunami Icon.png" />
     <None Include="Resources\Icon-Tornado.png" />
     <None Include="Resources\icon-nuclearblast.png" />
