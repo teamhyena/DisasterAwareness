@@ -42,7 +42,7 @@ Navigate to the DisasterAwareness directory
 
 Open Disaster Awareness Program.sln
 
-Click Start to Run the program
+Click Start to run the program
 
 ## Built With
 
