@@ -1,7 +1,7 @@
 
 # DisasterAwareness
 
-- Add General Description of the program
+- An alternative general alert system made in response to the 2018 missile warning incident in Hawaii. 
 
 ## Why did we pick this implementation? 
 
