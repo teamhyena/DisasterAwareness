@@ -17,11 +17,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 Since this project is built using the Windows Form library, you need to have a Windows enviornment to run it.
 
-##### GitKraken or SourceTree or Any git client
+- ##### GitKraken or SourceTree or Any git client
 
 Visit https://www.gitkraken.com/ and follow the instructions for installion on your particular platform. 
 
-##### Visual Studio
+- ##### Visual Studio
 
 Visit https://www.visualstudio.com/ and follow the instructions for installion. 
 
@@ -34,15 +34,15 @@ During installation make sure to select the packages indicated below, along with
 
 [Download a copy of DisasterAwarness](https://github.com/teamhyena/DisasterAwareness/archive/master.zip), or clone the [repository](https://github.com/teamhyena/teamhyena/) using the git client of your choice.
 
-Launch Visual Studio
+- Launch Visual Studio
 
-Go to File -> Open -> Project/Solution
+- Go to File -> Open -> Project/Solution
 
-Navigate to the DisasterAwareness directory 
+- Navigate to the DisasterAwareness directory 
 
-Open Disaster Awareness Program.sln
+- Open Disaster Awareness Program.sln
 
-Click Start to run the program
+- Click Start to run the program
 
 ## Built With
 
