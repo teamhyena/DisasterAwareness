@@ -47,6 +47,7 @@ Click Start to Run the program
 ## Built With
 
 * [Visual Studio](https://www.visualstudio.com/) - The IDE
+* [Windows Form](https://docs.microsoft.com/en-us/dotnet/framework/winforms/) - A Form Framework
 * [GitKraken](https://www.gitkraken.com/) - Git Gui Client
 
 
