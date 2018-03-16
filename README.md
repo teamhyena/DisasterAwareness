@@ -26,7 +26,7 @@ Visit https://www.gitkraken.com/ and follow the instructions for installion on y
 ```
 During installation make sure to select the packages indicated below along with any others you would like 
 ```
-![vs_install](https://i.imgur.com/u3hFIm3.png)
+![vs_install](https://i.imgur.com/ZxeJU6D.png)
 
 ### Installing
 
