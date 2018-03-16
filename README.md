@@ -31,18 +31,16 @@ During installation make sure to select the packages indicated below along with 
 ### Installing
 
 [Download a copy of DisasterAwarness](https://github.com/teamhyena/DisasterAwareness/archive/master.zip), or clone the [repository](https://github.com/teamhyena/teamhyena/) using the git client of your choice.
-```
-Give the example
-```
 
-And repeat
+Launch Visual Studio
 
-```
-until finished
-```
+Go to File -> Open -> Project/Solution
 
-End with an example of getting some data out of the system or using it for a little demo
+Navigate to the DisasterAwareness directory 
 
+Open Disaster Awareness Program.sln
+
+Click Start to Run the program
 
 ## Built With
 
