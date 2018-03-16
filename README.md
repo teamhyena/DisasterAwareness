@@ -13,12 +13,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them.
 
 
 ##### Windows
 
-Since this project is built using the Windows Form library, you need to have a Windows enviornment to run it
+Since this project is built using the Windows Form library, you need to have a Windows enviornment to run it.
 
 ##### GitKraken or SourceTree or Any git client
 
