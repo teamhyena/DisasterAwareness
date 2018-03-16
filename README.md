@@ -3,7 +3,7 @@
 
 - Add General Description of the program
 
-# Why did we pick this implementation? 
+## Why did we pick this implementation? 
 
 ## Getting Started
 
