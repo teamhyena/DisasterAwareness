@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-##### Windows
+- ##### Windows
 
 Since this project is built using the Windows Form library, you need to have a Windows enviornment to run it.
 
