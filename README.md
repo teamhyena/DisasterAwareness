@@ -30,7 +30,7 @@ During installation make sure to select the packages indicated below along with 
 
 ### Installing
 
-[Download a copy of DisasterAwarness](https://github.com/teamhyena/teamhyena/archive/master.zip), or clone the [repository](https://github.com/teamhyena/teamhyena/) using the git client of your choice.
+[Download a copy of DisasterAwarness](https://github.com/teamhyena/DisasterAwareness/archive/master.zip), or clone the [repository](https://github.com/teamhyena/teamhyena/) using the git client of your choice.
 ```
 Give the example
 ```
