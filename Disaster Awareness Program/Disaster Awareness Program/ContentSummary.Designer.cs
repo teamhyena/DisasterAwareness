@@ -31,17 +31,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nextButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -72,13 +72,42 @@
             this.panel1.Size = new System.Drawing.Size(429, 37);
             this.panel1.TabIndex = 52;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(110, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(426, 31);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Please Confirm Your Selections";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(90, 346);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 59);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Cancel and Reset Form";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Disaster_Awareness_Program.Properties.Resources.hurricane_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(385, 212);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(122, 94);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 62;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_1;
+            this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_5;
             this.pictureBox1.Location = new System.Drawing.Point(45, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(561, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
             // 
@@ -102,35 +131,6 @@
             this.pictureBox2.TabIndex = 54;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(426, 31);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Please Confirm Your Selections";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Disaster_Awareness_Program.Properties.Resources.hurricane_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(385, 212);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(122, 94);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 62;
-            this.pictureBox3.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(90, 346);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 59);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Cancel and Reset Form";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // ContentSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,10 +147,10 @@
             this.Size = new System.Drawing.Size(640, 480);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

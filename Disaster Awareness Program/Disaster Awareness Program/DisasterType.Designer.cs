@@ -37,13 +37,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -140,6 +140,16 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Tornado";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_2;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(561, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
             // button5
             // 
             this.button5.BackgroundImage = global::Disaster_Awareness_Program.Properties.Resources.Tsunami_Icon;
@@ -199,16 +209,6 @@
             this.button1.Size = new System.Drawing.Size(105, 94);
             this.button1.TabIndex = 15;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_1;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(561, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
             // 
             // DisasterType
             // 

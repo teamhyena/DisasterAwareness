@@ -196,11 +196,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_1;
+            this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_4;
             this.pictureBox1.Location = new System.Drawing.Point(37, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(561, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
             // 
