@@ -1,11 +1,11 @@
 
 # DisasterAwareness
 
-- An alternative general alert system made in response to the 2018 missile warning incident in Hawaii. 
+An alternative general alert system made in response to the 2018 missile warning incident in Hawaii. 
 
 ## Why did we pick this implementation and how it we Plan on Implementing it? 
 
-- By using Windows Form, we can create a user interface and use code to manipulate data. Thanks to the tight integration within the Microsoft Technology Stack, Windows Form can be easily used in conjunction with the .NET Framework. Visual Studio was the clear choice as an IDE due to its compatibility with both .NET and Windows Form. 
+By using Windows Form, we can create a user interface and use code to manipulate data. Thanks to the tight integration within the Microsoft Technology Stack, Windows Form can be easily used in conjunction with the .NET Framework. Visual Studio was the clear choice as an IDE due to its compatibility with both .NET and Windows Form. 
 
 The login page will be implemented using sqlite as a database that both stores the login information of the person as well as the times logged in. This provides extra security, and accountability. The rest of the UI is locked behind the login system and communicates with single session static variable store, despite the individual pages being discrete. Upon completion of the form the session is sent to the messaging system which acts as the bridge between the program and the exterior services. The data will be parsed, and split up according to need. This also presents a good place to check the validity of the data.
 
