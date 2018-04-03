@@ -26,7 +26,7 @@ namespace Disaster_Awareness_Program
 
 
         /// <summary>
-        /// Picture of the email icon
+        /// When the Picture of the email icon is clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -36,11 +36,19 @@ namespace Disaster_Awareness_Program
             string password = "password";
             string to = "to@gmail.com";
             string subject = "subject";
-            string body = "body "; 
+            string body = "body"; 
             
             SendEmail(password, subject, body, from, to);
         }
 
+        /// <summary>
+        /// Sends the email with the given parameters 
+        /// </summary>
+        /// <param name="_password"></param>
+        /// <param name="_subject"></param>
+        /// <param name="_body"></param>
+        /// <param name="_from"></param>
+        /// <param name="_to"></param>
         protected void SendEmail(string _password, string _subject, string _body, string _from, string _to)
         {
             //string Text = "";
