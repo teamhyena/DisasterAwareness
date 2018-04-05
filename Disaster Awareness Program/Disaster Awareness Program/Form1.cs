@@ -22,12 +22,12 @@ namespace Disaster_Awareness_Program
         private void Form1_Load(object sender, EventArgs e)
         {
             controlForms = new List<UserControl>();
-            controlForms.Add(login1);
-            controlForms.Add(alertType1);
-            controlForms.Add(disasterType1);
-            controlForms.Add(deliveryType1);
-            controlForms.Add(islandType1);
-            controlForms.Add(contentSummary1);
+            controlForms.Add(login1);//0
+            controlForms.Add(alertType1);//1
+            controlForms.Add(disasterType1);//2
+            controlForms.Add(deliveryType1);//3
+            controlForms.Add(islandType1);//4
+            controlForms.Add(contentSummary1);//5
             foreach (UserControl form in controlForms)
             {
                 hideForm(form);

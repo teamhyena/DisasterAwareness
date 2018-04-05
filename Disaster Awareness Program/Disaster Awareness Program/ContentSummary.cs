@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
+using System.Collections.Specialized;
 
 namespace Disaster_Awareness_Program
 {
     public partial class ContentSummary : UserControl
     {
+        //Empty for Security Reasons
+        private string webClientTextKey = "";
+        Form1 parent;
         public ContentSummary()
         {
             InitializeComponent();
@@ -26,8 +30,13 @@ namespace Disaster_Awareness_Program
         /// <param name="e"></param>
         private void nextButton_Click(object sender, EventArgs e)
         {
-            //SendTexts(); 
-            SendEmails();
+         
+                SendTexts();
+            
+            if (parent.deliveryType1.email)
+            {
+                SendEmails();
+            }
         }
 
 
@@ -103,9 +112,41 @@ namespace Disaster_Awareness_Program
             return 0;
         }
         
+        public void SendText(string _phoneNumber, string _body)
+        {
+            WebClient wClient = new WebClient();
+            byte[] response = wClient.UploadValues("http://textbelt.com/text", new NameValueCollection() {
+              { "phone", _phoneNumber},
+              { "message",_body},
+              { "key", webClientTextKey } });
+        }
+        public void SendTexts()
+        {
+            foreach (DataRow dr in userDataBase1.Tables[0].Rows)
+            {
+                SendText(dr["number"].ToString(), generateTextBody());
+            }
+            
+        }
+        public string generateTextBody()
+        {
+            String message="";
+            String currentDisasterName= Enum.GetName(typeof(DisasterType.disasterType), parent.disasterType1.currentDisasterType);
+
+            if (!parent.alertType1.realAlert)
+            {
+                message += "--This is a test of the Hawaii State Emergency Alert Service--\n";
+            }
+            message += currentDisasterName + " Alert for the islands of:";
+            foreach(String island in parent.islandType1.islandsToContact)
+            {
+                message += island + " ";
+            }
+            return message;
+        }
         private void ContentSummary_Load(object sender, EventArgs e)
         {
-
+            parent = (Form1)this.Parent;
         }
     }
 }

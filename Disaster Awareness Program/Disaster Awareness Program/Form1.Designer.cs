@@ -114,15 +114,13 @@
         }
 
         #endregion
-
-        private DeliveryType deliveryType1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private DisasterType disasterType1;
-        private AlertType alertType1;
-        private IslandType islandType1;
-        private Login login1;
-        private ContentSummary contentSummary1;
-
+        public DeliveryType deliveryType1;
+        public DisasterType disasterType1;
+        public IslandType islandType1;
+        public Login login1;
+        public ContentSummary contentSummary1;
+        public AlertType alertType1;
     }
 }
 

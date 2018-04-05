@@ -13,7 +13,7 @@ namespace Disaster_Awareness_Program
     public partial class AlertType : UserControl
     {
         Form1 parent;
-        bool realAlert=false;
+        public bool realAlert=false;
         public AlertType()
         {
             InitializeComponent();
