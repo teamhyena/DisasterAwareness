@@ -63,6 +63,7 @@
             this.nextButton.TabIndex = 61;
             this.nextButton.Text = "Send Alert";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // panel1
             // 
