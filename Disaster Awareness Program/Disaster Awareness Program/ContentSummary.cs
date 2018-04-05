@@ -26,8 +26,8 @@ namespace Disaster_Awareness_Program
         /// <param name="e"></param>
         private void nextButton_Click(object sender, EventArgs e)
         {
-            
-            SendEmails(); 
+            //SendTexts(); 
+            SendEmails();
         }
 
 
@@ -38,11 +38,10 @@ namespace Disaster_Awareness_Program
         /// <returns></returns>
         public int SendEmails()
         {
-
             string from = "teamhyenatest@gmail.com";
             string password = "ics414Test";
-            string subject = "subject";
-            string body = "body baby";
+            string subject = GetEmailSubject();
+            string body = GetEmailBody(); 
 
             IList<string> emails = new List<string>();
             emails = AddEmailstoSend(emails);
@@ -52,10 +51,18 @@ namespace Disaster_Awareness_Program
             {
                 ret += SendEmail(password, subject, body, from, email);
             }
-
             return ret; 
         }
 
+        private String GetEmailSubject()
+        {
+            return "_______ Warning issued for island(s) of : "; 
+        }
+        private String GetEmailBody()
+        {
+            return "_______ Warning issued for island(s) of : ";
+        }
+        
         /// <summary>
         /// Loads all the emails to send the warning to 
         /// </summary>
