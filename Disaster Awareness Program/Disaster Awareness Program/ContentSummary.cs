@@ -120,13 +120,27 @@ namespace Disaster_Awareness_Program
               { "message",_body},
               { "key", webClientTextKey } });
         }
-        public void SendTexts()
+        public bool SendTexts(string testPhoneNumber = null)
         {
-            foreach (DataRow dr in userDataBase1.Tables[0].Rows)
+            try
             {
-                SendText(dr["number"].ToString(), generateTextBody());
+                if (!string.IsNullOrWhiteSpace(testPhoneNumber))
+                {
+                    SendText(testPhoneNumber, "Internal System Test: Send Texts");
+                    return true;
+                }
+
+                foreach (DataRow dr in userDataBase1.Tables[0].Rows)
+                {
+                    SendText(dr["number"].ToString(), generateTextBody());
+                }
             }
-            
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+            return true; 
         }
         public string generateTextBody()
         {
