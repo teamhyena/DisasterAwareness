@@ -146,6 +146,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ContentSummary";
             this.Size = new System.Drawing.Size(640, 480);
+            this.Load += new System.EventHandler(this.ContentSummary_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

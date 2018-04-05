@@ -19,7 +19,7 @@ namespace Disaster_Awareness_Program
         public bool text = false;
         public bool television = false;
 
-
+        Form1 parent;
         public DeliveryType()
         {
             InitializeComponent();
@@ -37,6 +37,12 @@ namespace Disaster_Awareness_Program
             siren = sirenCheckBox.Checked;
             text = textCheckBox.Checked;
             television = televisionCheckBox.Checked;
+            parent.nextForm();
+        }
+
+        private void DeliveryType_Load(object sender, EventArgs e)
+        {
+            parent = (Form1)this.Parent;
         }
     }
 }

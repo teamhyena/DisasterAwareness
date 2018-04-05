@@ -12,6 +12,7 @@ namespace Disaster_Awareness_Program
 {
     public partial class Form1 : Form
     {
+        UserControl currentForm;
         public List<UserControl> controlForms;
         public Form1()
         {
@@ -48,12 +49,17 @@ namespace Disaster_Awareness_Program
 
         public void showForm(UserControl form)
         {
+            currentForm = form;
             foreach (UserControl form2 in controlForms)
             {
                 hideForm(form2);
             }
             form.Visible = true;
             form.Enabled = true;
+        }
+        public void nextForm()
+        {
+            showForm(controlForms[controlForms.IndexOf(currentForm) + 1]);
         }
         private void alertType1_Load(object sender, EventArgs e)
         {

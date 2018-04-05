@@ -102,5 +102,10 @@ namespace Disaster_Awareness_Program
             }
             return 0;
         }
+        
+        private void ContentSummary_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

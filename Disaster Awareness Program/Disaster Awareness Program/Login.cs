@@ -21,5 +21,12 @@ namespace Disaster_Awareness_Program
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //[TODO] Validate Response With Login
+            Form1 parent = (Form1) this.Parent;
+            parent.nextForm();
+        }
     }
 }
