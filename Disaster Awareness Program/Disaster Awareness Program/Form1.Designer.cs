@@ -89,6 +89,7 @@
             this.contentSummary1.Name = "contentSummary1";
             this.contentSummary1.Size = new System.Drawing.Size(640, 480);
             this.contentSummary1.TabIndex = 6;
+            this.contentSummary1.Load += new System.EventHandler(this.contentSummary1_Load);
             // 
             // Form1
             // 
@@ -107,7 +108,6 @@
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
-
             this.ResumeLayout(false);
             this.PerformLayout();
 

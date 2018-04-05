@@ -59,5 +59,10 @@ namespace Disaster_Awareness_Program
         {
 
         }
+
+        private void contentSummary1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

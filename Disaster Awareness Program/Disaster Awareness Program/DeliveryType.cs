@@ -23,47 +23,5 @@ namespace Disaster_Awareness_Program
         {
 
         }
-
-
-        /// <summary>
-        /// When the Picture of the email icon is clicked
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            string from = "name@gmail.com";
-            string password = "password";
-            string to = "to@gmail.com";
-            string subject = "subject";
-            string body = "body"; 
-            
-            SendEmail(password, subject, body, from, to);
-        }
-
-        /// <summary>
-        /// Sends the email with the given parameters 
-        /// </summary>
-        /// <param name="_password"></param>
-        /// <param name="_subject"></param>
-        /// <param name="_body"></param>
-        /// <param name="_from"></param>
-        /// <param name="_to"></param>
-        protected void SendEmail(string _password, string _subject, string _body, string _from, string _to)
-        {
-            //string Text = "";
-            SmtpClient mailClient = new SmtpClient("smtp.gmail.com", 587);
-            mailClient.EnableSsl = true; 
-            mailClient.Credentials = new NetworkCredential(_from, _password);
-            try
-            {
-                mailClient.Send(_from, _to, _subject, _body);
-                Console.WriteLine("email sent successfully");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("email was not sent successfully"); 
-            }
-        }
     }
 }
