@@ -28,5 +28,11 @@ namespace Disaster_Awareness_Program
             Form1 parent = (Form1) this.Parent;
             parent.nextForm();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var testForm = new InternalSystemTestForm();
+            testForm.Show();
+        }
     }
 }

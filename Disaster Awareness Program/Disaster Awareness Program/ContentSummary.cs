@@ -30,9 +30,9 @@ namespace Disaster_Awareness_Program
         /// <param name="e"></param>
         private void nextButton_Click(object sender, EventArgs e)
         {
-         
-                SendTexts();
-            
+
+            SendTexts();
+
             if (parent.deliveryType1.email)
             {
                 SendEmails();
@@ -50,17 +50,17 @@ namespace Disaster_Awareness_Program
             string from = "teamhyenatest@gmail.com";
             string password = "ics414Test";
             string subject = GetEmailSubject();
-            string body = GetEmailBody(); 
+            string body = GetEmailBody();
 
             IList<string> emails = new List<string>();
             emails = AddEmailstoSend(emails);
-            
-            int ret = 0; 
+
+            int ret = 0;
             foreach (var email in emails)
             {
                 ret += SendEmail(password, subject, body, from, email);
             }
-            return ret; 
+            return ret;
         }
 
         private String GetEmailSubject()
@@ -79,13 +79,13 @@ namespace Disaster_Awareness_Program
                 message += "This is NOT a Drill--";
 
             }
-            return message; 
+            return message;
         }
         private String GetEmailBody()
         {
             return generateTextBody();
         }
-        
+
         /// <summary>
         /// Loads all the emails to send the warning to 
         /// </summary>
@@ -120,52 +120,49 @@ namespace Disaster_Awareness_Program
             catch (Exception e)
             {
                 Console.WriteLine("email was not sent successfully" + e);
-                return 1; 
+                return 1;
             }
             return 0;
         }
-        
-        public void SendText(string _phoneNumber, string _body)
-        {
-            WebClient wClient = new WebClient();
-            byte[] response = wClient.UploadValues("http://textbelt.com/text", new NameValueCollection() {
-              { "phone", _phoneNumber},
-              { "message",_body},
-              { "key", webClientTextKey } });
-        }
-        public bool SendTexts(string testPhoneNumber = null)
+
+        public bool SendText(string _phoneNumber, string _body)
         {
             try
             {
-                if (!string.IsNullOrWhiteSpace(testPhoneNumber))
-                {
-                    SendText(testPhoneNumber, "Internal System Test: Send Texts");
-                    return true;
-                }
-
-                foreach (DataRow dr in userDataBase1.Tables[0].Rows)
-                {
-                    SendText(dr["number"].ToString(), generateTextBody());
-                }
+                WebClient wClient = new WebClient();
+                byte[] response = wClient.UploadValues("http://textbelt.com/text", new NameValueCollection() {
+              { "phone", _phoneNumber},
+              { "message",_body},
+              { "key", webClientTextKey } });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
 
-            return true; 
+            return true;
         }
+
+        public void SendTexts()
+        {
+            foreach (DataRow dr in userDataBase1.Tables[0].Rows)
+            {
+                SendText(dr["number"].ToString(), generateTextBody());
+            }
+
+        }
+
         public string generateTextBody()
         {
-            String message="";
-            String currentDisasterName= Enum.GetName(typeof(DisasterType.disasterType), parent.disasterType1.currentDisasterType);
+            String message = "";
+            String currentDisasterName = Enum.GetName(typeof(DisasterType.disasterType), parent.disasterType1.currentDisasterType);
 
             if (!parent.alertType1.realAlert)
             {
                 message += "--This is a test of the Hawaii State Emergency Alert Service--\n";
             }
             message += currentDisasterName + " Alert for the islands of:";
-            foreach(String island in parent.islandType1.islandsToContact)
+            foreach (String island in parent.islandType1.islandsToContact)
             {
                 message += island + " ";
             }
