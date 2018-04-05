@@ -14,14 +14,29 @@ namespace Disaster_Awareness_Program
 {
     public partial class DeliveryType : UserControl
     {
+        public bool email = false;
+        public bool siren = false;
+        public bool text = false;
+        public bool television = false;
+
+
         public DeliveryType()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
 
+        /// <summary>
+        /// Next button, will move to the next page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            email = emailCheckBox.Checked;
+            siren = sirenCheckBox.Checked;
+            text = textCheckBox.Checked;
+            television = televisionCheckBox.Checked;
         }
     }
 }
