@@ -32,14 +32,15 @@ namespace Disaster_Awareness_Program
 
 
         /// <summary>
-        /// Loads the emails to send and calls SendEmail repeatedly 
+        /// Loads the email contents and parameters and calls SendEmail repeatedly to send them 
+        /// 0 - no errors >0 - indicates errors 
         /// </summary>
         /// <returns></returns>
         public int SendEmails()
         {
 
-            string from = "banna.apple123@gmail.com";
-            string password = "password";
+            string from = "teamhyenatest@gmail.com";
+            string password = "ics414Test";
             string subject = "subject";
             string body = "body baby";
 
@@ -55,16 +56,21 @@ namespace Disaster_Awareness_Program
             return ret; 
         }
 
-
+        /// <summary>
+        /// Loads all the emails to send the warning to 
+        /// </summary>
+        /// <param name="emails"></param>
+        /// <returns></returns>
         private IList<String> AddEmailstoSend(IList<String> emails)
         {
-            emails.Add("mymail@gmail.com");
+            emails.Add("ark.mymail@gmail.com");
             return emails;
         }
 
 
         /// <summary>
         /// Sends the email with the given parameters 
+        /// 0 - no errors >0 - indicates errors 
         /// </summary>
         /// <param name="_password"></param>
         /// <param name="_subject"></param>
