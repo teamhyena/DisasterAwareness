@@ -27,7 +27,7 @@ namespace Disaster_Awareness_Program
 
 
         /// <summary>
-        /// Next button, will move to the next page
+        /// Next button, will move to the next page and set the booleans based on checkboxes
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
