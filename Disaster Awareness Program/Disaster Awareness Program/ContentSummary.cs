@@ -70,7 +70,7 @@ namespace Disaster_Awareness_Program
         /// <returns></returns>
         private IList<String> AddEmailstoSend(IList<String> emails)
         {
-            emails.Add("ark.mymail@gmail.com");
+            emails.Add("teamhyenatest@gmail.com");
             return emails;
         }
 
