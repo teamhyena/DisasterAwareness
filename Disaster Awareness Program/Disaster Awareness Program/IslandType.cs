@@ -12,11 +12,13 @@ namespace Disaster_Awareness_Program
 {
     public partial class IslandType : UserControl
     {
+        Form1 parent;
+        public List<String> islandsToContact;
         public IslandType()
         {
             InitializeComponent();
         }
-
+        
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -59,7 +61,41 @@ namespace Disaster_Awareness_Program
 
         private void IslandType_Load(object sender, EventArgs e)
         {
+            parent = (Form1)this.Parent;
+        }
 
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            islandsToContact = new List<String>();
+            if (hawaiiCheckBox.Checked)
+            {
+                islandsToContact.Add("Hawaii");
+            }
+            if (mauiCheckBox.Checked)
+            {
+                islandsToContact.Add("Maui");
+            }
+            if (molokaiCheckBox.Checked)
+            {
+                islandsToContact.Add("Molokai");
+            }
+            if (kahoolaweCheckBox.Checked)
+            {
+                islandsToContact.Add("Kahoolawe");
+            }
+            if (oahuCheckBox.Checked)
+            {
+                islandsToContact.Add("Oahu");
+            }
+            if (lanaiCheckBox.Checked)
+            {
+                islandsToContact.Add("Oahu");
+            }
+            if (kauaiCheckBox.Checked)
+            {
+                islandsToContact.Add("kauai");
+            }
+            parent.nextForm();
         }
     }
 }

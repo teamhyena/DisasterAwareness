@@ -51,6 +51,7 @@
             this.sendTestAlertBtn.TabIndex = 0;
             this.sendTestAlertBtn.Text = "Send TEST Alert";
             this.sendTestAlertBtn.UseVisualStyleBackColor = true;
+            this.sendTestAlertBtn.Click += new System.EventHandler(this.sendTestAlertBtn_Click);
             // 
             // sendRealAlertBtn
             // 
@@ -62,6 +63,7 @@
             this.sendRealAlertBtn.TabIndex = 1;
             this.sendRealAlertBtn.Text = "Send Real Alert";
             this.sendRealAlertBtn.UseVisualStyleBackColor = true;
+            this.sendRealAlertBtn.Click += new System.EventHandler(this.sendRealAlertBtn_Click);
             // 
             // label1
             // 
@@ -140,6 +142,7 @@
             this.Controls.Add(this.sendTestAlertBtn);
             this.Name = "AlertType";
             this.Size = new System.Drawing.Size(640, 480);
+            this.Load += new System.EventHandler(this.AlertType_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
