@@ -65,11 +65,25 @@ namespace Disaster_Awareness_Program
 
         private String GetEmailSubject()
         {
-            return "_______ Warning issued for island(s) of : "; 
+            String message = "";
+            String currentDisasterName = Enum.GetName(typeof(DisasterType.disasterType), parent.disasterType1.currentDisasterType);
+
+            if (!parent.alertType1.realAlert)
+            {
+                message += "--Hawaii State Emergency Alert Service: This Is a Test-- ";
+                message += currentDisasterName + " Alert";
+            }
+            else
+            {
+                message += "--Hawaii State Emergency Alert Service: " + currentDisasterName + " Alert ";
+                message += "This is NOT a Drill--";
+
+            }
+            return message; 
         }
         private String GetEmailBody()
         {
-            return "_______ Warning issued for island(s) of : ";
+            return generateTextBody();
         }
         
         /// <summary>
@@ -102,11 +116,10 @@ namespace Disaster_Awareness_Program
             {
                 mailClient.Send(_from, _to, _subject, _body);
                 Console.WriteLine("email sent successfully");
-                MessageBox.Show("email sent successfully");
             }
             catch (Exception e)
             {
-                Console.WriteLine("email was not sent successfully");
+                Console.WriteLine("email was not sent successfully" + e);
                 return 1; 
             }
             return 0;
