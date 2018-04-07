@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.nextButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.userDataBase1 = new Disaster_Awareness_Program.userDataBase();
+            this.islandGroupBox = new System.Windows.Forms.GroupBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.islandTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.alertTypeTextBox = new System.Windows.Forms.TextBox();
+            this.disasterTypeLabel = new System.Windows.Forms.Label();
+            this.disasterLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDataBase1)).BeginInit();
+            this.islandGroupBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -94,16 +98,6 @@
             this.button1.Text = "Cancel and Reset Form";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Disaster_Awareness_Program.Properties.Resources.hurricane_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(385, 212);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(122, 94);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 62;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Disaster_Awareness_Program.Properties.Resources.Stage_5;
@@ -114,53 +108,100 @@
             this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Disaster_Awareness_Program.Properties.Resources.radio_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(257, 212);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(122, 94);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 57;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Disaster_Awareness_Program.Properties.Resources.Siren_Icon;
-            this.pictureBox2.Location = new System.Drawing.Point(129, 212);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(122, 94);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 54;
-            this.pictureBox2.TabStop = false;
-            // 
             // userDataBase1
             // 
             this.userDataBase1.DataSetName = "userDataBase";
             this.userDataBase1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // islandGroupBox
+            // 
+            this.islandGroupBox.Controls.Add(this.islandTextBox);
+            this.islandGroupBox.Location = new System.Drawing.Point(427, 192);
+            this.islandGroupBox.Name = "islandGroupBox";
+            this.islandGroupBox.Size = new System.Drawing.Size(200, 148);
+            this.islandGroupBox.TabIndex = 64;
+            this.islandGroupBox.TabStop = false;
+            this.islandGroupBox.Text = "Islands ";
+            this.islandGroupBox.Enter += new System.EventHandler(this.iconGroupBox_Enter);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // islandTextBox
+            // 
+            this.islandTextBox.AcceptsReturn = true;
+            this.islandTextBox.Location = new System.Drawing.Point(13, 20);
+            this.islandTextBox.Multiline = true;
+            this.islandTextBox.Name = "islandTextBox";
+            this.islandTextBox.ReadOnly = true;
+            this.islandTextBox.Size = new System.Drawing.Size(181, 122);
+            this.islandTextBox.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.alertTypeTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(221, 192);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 148);
+            this.groupBox1.TabIndex = 65;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Alert Types";
+            // 
+            // alertTypeTextBox
+            // 
+            this.alertTypeTextBox.AcceptsReturn = true;
+            this.alertTypeTextBox.Location = new System.Drawing.Point(13, 20);
+            this.alertTypeTextBox.Multiline = true;
+            this.alertTypeTextBox.Name = "alertTypeTextBox";
+            this.alertTypeTextBox.ReadOnly = true;
+            this.alertTypeTextBox.Size = new System.Drawing.Size(181, 122);
+            this.alertTypeTextBox.TabIndex = 0;
+            // 
+            // disasterTypeLabel
+            // 
+            this.disasterTypeLabel.AutoSize = true;
+            this.disasterTypeLabel.Location = new System.Drawing.Point(24, 192);
+            this.disasterTypeLabel.Name = "disasterTypeLabel";
+            this.disasterTypeLabel.Size = new System.Drawing.Size(72, 13);
+            this.disasterTypeLabel.TabIndex = 68;
+            this.disasterTypeLabel.Text = "Disaster Type";
+            // 
+            // disasterLabel
+            // 
+            this.disasterLabel.AutoSize = true;
+            this.disasterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disasterLabel.Location = new System.Drawing.Point(60, 242);
+            this.disasterLabel.Name = "disasterLabel";
+            this.disasterLabel.Size = new System.Drawing.Size(99, 33);
+            this.disasterLabel.TabIndex = 69;
+            this.disasterLabel.Text = "label1";
+            // 
             // ContentSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.disasterLabel);
+            this.Controls.Add(this.disasterTypeLabel);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.islandGroupBox);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nextButton);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Name = "ContentSummary";
             this.Size = new System.Drawing.Size(640, 480);
             this.Load += new System.EventHandler(this.ContentSummary_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDataBase1)).EndInit();
+            this.islandGroupBox.ResumeLayout(false);
+            this.islandGroupBox.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,12 +211,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button nextButton;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
         private userDataBase userDataBase1;
+        private System.Windows.Forms.GroupBox islandGroupBox;
+        private System.Windows.Forms.TextBox islandTextBox;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox alertTypeTextBox;
+        private System.Windows.Forms.Label disasterTypeLabel;
+        private System.Windows.Forms.Label disasterLabel;
     }
 }

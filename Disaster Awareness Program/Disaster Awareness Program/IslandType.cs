@@ -95,6 +95,7 @@ namespace Disaster_Awareness_Program
             {
                 islandsToContact.Add("kauai");
             }
+            parent.contentSummary1.UpdateResultsScreen();
             parent.nextForm();
         }
 

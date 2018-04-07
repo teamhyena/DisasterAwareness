@@ -171,6 +171,50 @@ namespace Disaster_Awareness_Program
         private void ContentSummary_Load(object sender, EventArgs e)
         {
             parent = (Form1)this.Parent;
+         
+        }
+
+        private void ContentSummary_Shown(object sender, EventArgs e)
+        {
+            UpdateResultsScreen();
+            MessageBox.Show("shit");
+
+        }
+        public void UpdateResultsScreen()
+        {
+            foreach (String island in parent.islandType1.islandsToContact)
+            {
+                islandTextBox.Text = islandTextBox.Text + island + "\r\n";
+            }
+            String alertTypeText="";
+            if (parent.alertType1.realAlert)
+            {
+                alertTypeText += "** Real Alert **\r\n   \r\n";
+            }else
+            {
+                alertTypeText += "** Test Alert **\r\n";
+            }
+            if (parent.deliveryType1.siren)
+                alertTypeText += "Siren Alarm\r\n";
+            if (parent.deliveryType1.television)
+                alertTypeText += "Television Warning Signal\r\n";
+            if (parent.deliveryType1.text)
+                alertTypeText += "Cellphone Text Alert\r\n";
+            if (parent.deliveryType1.email)
+                alertTypeText += "Email Alarm Messages\r\n";
+            alertTypeTextBox.Text = alertTypeText;
+
+            disasterLabel.Text = Enum.GetName(typeof(DisasterType.disasterType), parent.disasterType1.currentDisasterType);
+
+        }
+        private void iconGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
