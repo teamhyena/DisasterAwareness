@@ -11,6 +11,10 @@ The login page will be implemented using sqlite as a database that both stores t
 
 The programming language chosen is C#. This is mostly due to its decent documentation when paired with Visual Studios UI tools. This presents us with an easy way to build the UI without unnecessary hassle. C# also presents the group with a language familiar enough that learning curve shouldn’t be an issue for members of the project. 
 
+## Device Drivers
+
+Using the interface, you can send both email and text alerts with the information entered. The structure is designed to be easily scalable, so that large numbers of email and text alerts can be sent. The current implementation is a proof of concept and testing purposes.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and running purposes.
