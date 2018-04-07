@@ -12,7 +12,7 @@
   <xs:element name="userDataBase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="userDataBase" msprop:Generator_UserDSName="userDataBase">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="phoneNumbers" msprop:Generator_TableClassName="phoneNumbersDataTable" msprop:Generator_TableVarName="tablephoneNumbers" msprop:Generator_TablePropName="phoneNumbers" msprop:Generator_RowDeletingName="phoneNumbersRowDeleting" msprop:Generator_RowChangingName="phoneNumbersRowChanging" msprop:Generator_RowEvHandlerName="phoneNumbersRowChangeEventHandler" msprop:Generator_RowDeletedName="phoneNumbersRowDeleted" msprop:Generator_UserTableName="phoneNumbers" msprop:Generator_RowChangedName="phoneNumbersRowChanged" msprop:Generator_RowEvArgName="phoneNumbersRowChangeEvent" msprop:Generator_RowClassName="phoneNumbersRow">
+        <xs:element name="phoneNumbers" msprop:Generator_TableClassName="phoneNumbersDataTable" msprop:Generator_TableVarName="tablephoneNumbers" msprop:Generator_RowChangedName="phoneNumbersRowChanged" msprop:Generator_TablePropName="phoneNumbers" msprop:Generator_RowDeletingName="phoneNumbersRowDeleting" msprop:Generator_RowChangingName="phoneNumbersRowChanging" msprop:Generator_RowEvHandlerName="phoneNumbersRowChangeEventHandler" msprop:Generator_RowDeletedName="phoneNumbersRowDeleted" msprop:Generator_RowClassName="phoneNumbersRow" msprop:Generator_UserTableName="phoneNumbers" msprop:Generator_RowEvArgName="phoneNumbersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="number" msprop:Generator_ColumnVarNameInTable="columnnumber" msprop:Generator_ColumnPropNameInRow="number" msprop:Generator_ColumnPropNameInTable="numberColumn" msprop:Generator_UserColumnName="number" type="xs:string" minOccurs="0" />
@@ -20,7 +20,34 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_UserTableName="users" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_RowEvArgName="usersRowChangeEvent" msprop:Generator_RowClassName="usersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username" type="xs:string" minOccurs="0" />
+              <xs:element name="password" msprop:Generator_ColumnVarNameInTable="columnpassword" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_UserColumnName="password" type="xs:string" minOccurs="0" />
+              <xs:element name="userID" msprop:Generator_ColumnVarNameInTable="columnuserID" msprop:Generator_ColumnPropNameInRow="userID" msprop:Generator_ColumnPropNameInTable="userIDColumn" msprop:Generator_UserColumnName="userID" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="actionsPerformed" msprop:Generator_TableClassName="actionsPerformedDataTable" msprop:Generator_TableVarName="tableactionsPerformed" msprop:Generator_TablePropName="actionsPerformed" msprop:Generator_RowDeletingName="actionsPerformedRowDeleting" msprop:Generator_RowChangingName="actionsPerformedRowChanging" msprop:Generator_RowEvHandlerName="actionsPerformedRowChangeEventHandler" msprop:Generator_RowDeletedName="actionsPerformedRowDeleted" msprop:Generator_UserTableName="actionsPerformed" msprop:Generator_RowChangedName="actionsPerformedRowChanged" msprop:Generator_RowEvArgName="actionsPerformedRowChangeEvent" msprop:Generator_RowClassName="actionsPerformedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userID" msprop:Generator_ColumnVarNameInTable="columnuserID" msprop:Generator_ColumnPropNameInRow="userID" msprop:Generator_ColumnPropNameInTable="userIDColumn" msprop:Generator_UserColumnName="userID" type="xs:long" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="actionPerformed" msprop:Generator_ColumnVarNameInTable="columnactionPerformed" msprop:Generator_ColumnPropNameInRow="actionPerformed" msprop:Generator_ColumnPropNameInTable="actionPerformedColumn" msprop:Generator_UserColumnName="actionPerformed" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:users" />
+      <xs:field xpath="mstns:userID" />
+    </xs:unique>
   </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="users_actionsPerformed" msdata:parent="users" msdata:child="actionsPerformed" msdata:parentkey="userID" msdata:childkey="userID" msprop:Generator_UserChildTable="actionsPerformed" msprop:Generator_ChildPropName="GetactionsPerformedRows" msprop:Generator_UserRelationName="users_actionsPerformed" msprop:Generator_ParentPropName="usersRow" msprop:Generator_RelationVarName="relationusers_actionsPerformed" msprop:Generator_UserParentTable="users" />
+    </xs:appinfo>
+  </xs:annotation>
 </xs:schema>

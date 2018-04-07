@@ -4,6 +4,10 @@
 
     partial class userDataBase
     {
+        partial class actionsPerformedDataTable
+        {
+        }
+
         partial class phoneNumbersDataTable
         {
         }
