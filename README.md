@@ -13,7 +13,7 @@ The programming language chosen is C#. This is mostly due to its decent document
 
 ## Device Drivers
 
-Using the interface, you can send both email and text alerts with the information entered. The structure is designed to be easily scalable, so that large numbers of email and text alerts can be sent. The current implementation is a proof of concept and testing purposes.
+Using the interface, you can send both email and text alerts with the information entered. The structure is designed to be easily scalable, so that large numbers of email and text alerts can be sent. The current implementation is a proof of concept and for testing purposes.
 
 ## Getting Started
 
