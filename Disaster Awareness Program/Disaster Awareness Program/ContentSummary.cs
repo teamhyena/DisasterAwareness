@@ -216,5 +216,21 @@ namespace Disaster_Awareness_Program
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Are you sure you want to cancel creating this new project? Your changes will not be saved.", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(d == DialogResult.Yes)
+            {
+                Form1 NewForm = new Form1();
+                NewForm.Show();
+                this.Dispose();
+                parent.Hide() ;
+            }
+            if (d == DialogResult.No)
+            {
+
+            }
+        }
     }
 }

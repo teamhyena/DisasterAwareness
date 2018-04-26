@@ -39,5 +39,17 @@ namespace Disaster_Awareness_Program
         {
             parent = (Form1)this.Parent;
         }
+
+        private void overrideCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (overrideCheckBox.Checked == true)
+            {
+                sendRealAlertBtn.Enabled = true;
+            }
+            else
+            {
+                sendRealAlertBtn.Enabled = false;
+            }
+        }
     }
 }
