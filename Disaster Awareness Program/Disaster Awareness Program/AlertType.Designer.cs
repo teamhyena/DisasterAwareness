@@ -94,6 +94,7 @@
             this.overrideCheckBox.TabIndex = 4;
             this.overrideCheckBox.Text = "Override";
             this.overrideCheckBox.UseVisualStyleBackColor = true;
+            this.overrideCheckBox.CheckedChanged += new System.EventHandler(this.overrideCheckBox_CheckedChanged);
             // 
             // label3
             // 

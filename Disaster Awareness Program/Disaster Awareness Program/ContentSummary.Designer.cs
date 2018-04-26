@@ -37,8 +37,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userDataBase1 = new Disaster_Awareness_Program.userDataBase();
             this.islandGroupBox = new System.Windows.Forms.GroupBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.islandTextBox = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.alertTypeTextBox = new System.Windows.Forms.TextBox();
             this.disasterTypeLabel = new System.Windows.Forms.Label();
@@ -97,6 +97,7 @@
             this.button1.TabIndex = 63;
             this.button1.Text = "Cancel and Reset Form";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -124,11 +125,6 @@
             this.islandGroupBox.Text = "Islands ";
             this.islandGroupBox.Enter += new System.EventHandler(this.iconGroupBox_Enter);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // islandTextBox
             // 
             this.islandTextBox.AcceptsReturn = true;
@@ -138,6 +134,11 @@
             this.islandTextBox.ReadOnly = true;
             this.islandTextBox.Size = new System.Drawing.Size(181, 122);
             this.islandTextBox.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // groupBox1
             // 

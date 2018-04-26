@@ -35,9 +35,6 @@ namespace Disaster_Awareness_Program
             showForm(login1);
 
 
-            //Debug
-            DebugControl debug = new DebugControl(this);
-            debug.Show();
         }
 
 
